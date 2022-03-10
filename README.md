@@ -1,4 +1,4 @@
-# Kernel Usermode Communication Method (WIP)
+# Kernel Usermode Communication Method (WIP & Educational Purposes)
 Manually mapped kernel driver using system thread to process shared memory as a communication method with Usermode client. This is a work in progress and has much work to be done to be not only stable but a good reference for other projects.
 
 The driver is manually mapped with a custom version of TheCruz kdmapper, altered to allow for custom driver entry point to receive necessary information to communicate with usermode client. It uses a system thread to continuosly await for requests by parsing the shared memory for predefined operations.
